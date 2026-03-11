@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta CEP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>📬 Consulta de CEP</h1>
+        <p class="subtitulo">Digite um CEP e descubra o endereço completo</p>
+        <div class="busca">
+            <input type="text" id="campoCep" placeholder="Ex: 01001000" maxlength="8">
+            <button id="btnBuscar">Buscar</button>
+        </div>
+        <div id="erro" class="erro oculto"></div>
+        <div id="resultado" class="resultado oculto">
+            <h2>Endereço Encontrado</h2>
+            <div class="campo">
+                <span class="rotulo">CEP:</span>
+                <span id="resCep"></span>
+            </div>
+            <div class="campo">
+                <span class="rotulo">Logradouro:</span>
+                <span id="resLogradouro"></span>
+            </div>
+            <div class="campo">
+                <span class="rotulo">Bairro:</span>
+                <span id="resBairro"></span>
+            </div>
+            <div class="campo">
+                <span class="rotulo">Cidade:</span>
+                <span id="resCidade"></span>
+            </div>
+            <div class="campo">
+                <span class="rotulo">Estado:</span>
+                <span id="resEstado"></span>
+            </div>
+        </div>
+    </div>
+    <!-- Script externo -->
+    <script src="script.js"></script>
+</body>
+
+</html>
